@@ -9,7 +9,7 @@ Servo Servo1;
 class ServoMove {
    public:  
          void servomove_setup();   
-         void servomove_loop();   
+         void servomove_loop(int pos);   
          
 };
 

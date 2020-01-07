@@ -8,5 +8,5 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  tce.servomove_loop();  
+  tce.servomove_loop(80);  
 }

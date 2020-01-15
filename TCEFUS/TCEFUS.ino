@@ -3,6 +3,7 @@
 ServoMove tce;
 TemperatureDetect td;
 
+
 void setup() {
   // put your setup code here, to run once:
   tce.servomove_setup();
@@ -10,9 +11,10 @@ void setup() {
 }
 
 void loop() {
+   
   // put your main code here, to run repeatedly:
-  tce.servomove_loop(80);  
+    tce.servomove_loop(80);  
     Serial.print("temperature = ");
-    Serial.print(td.temperatureselect_loop); 
+    Serial.print(td.temperatureselect_loop()); 
     Serial.println("C  ");
 }

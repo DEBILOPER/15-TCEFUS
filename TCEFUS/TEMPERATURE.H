@@ -24,15 +24,12 @@ float TemperatureDetect::temperatureselect_loop(){
  
     DHT.read11(dht_apin);
     
-    // Serial.print("Current humidity = ");
-    // Serial.print(DHT.humidity);
-    // Serial.print("%  ");
-//     Serial.print("temperature = ");
-//     Serial.print(DHT.temperature); 
-//     Serial.println("C  ");
-    
+    //Serial.print("Current humidity = ");
+    //Serial.print(DHT.humidity);
+    //Serial.print("%  ");
+    //Serial.print("temperature = ");
+    //Serial.print(DHT.temperature); 
+    //Serial.println("C  ");
     delay(1000);//Wait 1 second before accessing sensor again.
     return DHT.temperature;
-     //Fastest should be once every two seconds.
- 
-}// end loop() 
+}
